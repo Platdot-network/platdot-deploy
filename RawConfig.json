@@ -1,0 +1,65 @@
+{
+    "relayerThreshold": "3",
+    "ethchains": [
+      {
+        "name": "alaya",
+        "chainId": "2",
+        "endpoint": [
+          "http://47.110.34.31:6789"
+        ],
+        "bridge": "atp1emxqzwmz0nv5pxk3h9e2dp3p6djfkqwn4v05zk",
+        "erc20Handler": "atp15nqwyjpffntmgg05aq6u7frdvy60qnm82007q5",
+        "http": "true",
+        "prefix": "atp",
+        "networkId": "201030",
+        "relayers": [
+          "atp18hqda4eajphkfarxaa2rutc5dwdwx9z5vy2nmh"
+        ]
+      },
+      {
+        "name": "platon",
+        "chainId": "4",
+        "endpoint": [
+          "http://47.241.98.219:6789"
+        ],
+        "bridge": "lat13kpqglnd5xl699smjulk64v048ku7d50p3yntw",
+        "erc20Handler": "lat18svtj54uzxpxunu0q63fsenyy66skz2eaw4lz3",
+        "http": "true",
+        "prefix": "lat",
+        "networkId": "210309",
+        "relayers": [
+          "lat18hqda4eajphkfarxaa2rutc5dwdwx9z54jutyc"
+        ]
+      }
+    ],
+    "subChains": [
+      {
+        "name":       "kusama_ksm",
+        "chainId":    "1",
+        "endpoint":   [
+          "wss://supercube.pro"
+        ],
+        "multiSigAddress": "FYzLbRnPh7ZRkgDf23oziUzFfpokQzwRqpM9Xc6gMt2i21o",
+        "totalRelayer": "5",
+        "multiSigThreshold": "3",
+        "maxWeight": "22698000000",
+        "relayers": [
+          "5CHwt8bFyDLC3MyzPQugmmxZTGjShBW2kFMWiC2kSL5TuJxd"
+        ]
+      },
+      {
+        "name":       "polkadot_dot",
+        "chainId":    "3",
+        "endpoint":   [
+          "wss://dot.supercube.pro"
+        ],
+        "multiSigAddress": "FYzLbRnPh7ZRkgDf23oziUzFfpokQzwRqpM9Xc6gMt2i21o",
+        "totalRelayer": "5",
+        "multiSigThreshold": "3",
+        "maxWeight": "22698000000",
+        "relayers": [
+          "5CHwt8bFyDLC3MyzPQugmmxZTGjShBW2kFMWiC2kSL5TuJxd"
+        ]
+      }
+    ]
+  }
