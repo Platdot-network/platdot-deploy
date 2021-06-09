@@ -13,7 +13,11 @@
         "prefix": "atp",
         "networkId": "201030",
         "relayers": [
-          "atp18hqda4eajphkfarxaa2rutc5dwdwx9z5vy2nmh"
+          "atp1y32ky3nd5p9ygm2kgx93y7t28p57jf7gumd9xe",
+          "atp1pcgzsz5s2q4m0ydkqsjcyfdzmt9nt5t8da00yh",
+          "atp1v7cffhdflqh2zn3vqnxc5g7673wfga7zrjnwzv",
+          "atp1rzz4cygaluz29y4kgnmefpvgt8xlje8cczl0su",
+          "atp1w5cmue4s5wflr77sm792zxrp9wldg9xpgxdmf2"
         ]
       },
       {
@@ -28,7 +32,11 @@
         "prefix": "lat",
         "networkId": "210309",
         "relayers": [
-          "lat18hqda4eajphkfarxaa2rutc5dwdwx9z54jutyc"
+          "lat1y32ky3nd5p9ygm2kgx93y7t28p57jf7g9dmaek",
+          "lat1pcgzsz5s2q4m0ydkqsjcyfdzmt9nt5t85tehmc",
+          "lat1v7cffhdflqh2zn3vqnxc5g7673wfga7z6y9kar",
+          "lat1rzz4cygaluz29y4kgnmefpvgt8xlje8cp5fh0n",
+          "lat1hfzcyee9ds4w0fmmt70d9ggjd3tgfn5l68kvp4"
         ]
       }
     ],
@@ -39,12 +47,16 @@
         "endpoint":   [
           "wss://supercube.pro"
         ],
-        "multiSigAddress": "FYzLbRnPh7ZRkgDf23oziUzFfpokQzwRqpM9Xc6gMt2i21o",
+        "multiSigAddress": "13uP8o6V3n33UnXKwgvpJrSD9ZPbt4voTyBX4cLzYft66dT2",
         "totalRelayer": "5",
         "multiSigThreshold": "3",
         "maxWeight": "22698000000",
         "relayers": [
-          "5CHwt8bFyDLC3MyzPQugmmxZTGjShBW2kFMWiC2kSL5TuJxd"
+          "5C5vpjnvLgb3scZMej6AziiaWRDFRk3FuFXhJZHoN7NR9bi2",
+          "5ER6yHdUTDoqYotz95nwYbYkGwkPhCMoj1nCC2MHxqehVe8w",
+          "GqCwgVdxFSeZRZdkc9G2BnFqUsjgim6ep8fki3zQpRPQ8fp",
+          "5H9Upa2TWtZLnoFeovC9admD6xnSbSJHJ98x1X1H9NpEyfik",
+          "JLbTmycZQNo2SC1TdkEDzJkkbszmcFfaURh2SniuS78ijXc"
         ]
       },
       {
@@ -53,12 +65,16 @@
         "endpoint":   [
           "wss://dot.supercube.pro"
         ],
-        "multiSigAddress": "FYzLbRnPh7ZRkgDf23oziUzFfpokQzwRqpM9Xc6gMt2i21o",
+        "multiSigAddress": "13uP8o6V3n33UnXKwgvpJrSD9ZPbt4voTyBX4cLzYft66dT2",
         "totalRelayer": "5",
         "multiSigThreshold": "3",
         "maxWeight": "22698000000",
         "relayers": [
-          "5CHwt8bFyDLC3MyzPQugmmxZTGjShBW2kFMWiC2kSL5TuJxd"
+          "5C5vpjnvLgb3scZMej6AziiaWRDFRk3FuFXhJZHoN7NR9bi2",
+          "5ER6yHdUTDoqYotz95nwYbYkGwkPhCMoj1nCC2MHxqehVe8w",
+          "15FtRhQqBfhCFJkhwYPDGPFQYWb9aMW4Gw2QXLmPV7EQqPxj",
+          "5H9Upa2TWtZLnoFeovC9admD6xnSbSJHJ98x1X1H9NpEyfik",
+          "16mGwntonpdLiKP5eZzBUBmuTdbQfEzdCbKRo5W7yivAA8gw"
         ]
       }
     ]
