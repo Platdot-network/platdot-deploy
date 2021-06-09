@@ -5,11 +5,11 @@
       "name": "alaya",
       "chainId": "2",
       "endpoint": [
-        "http://47.110.34.31:6789"
+        "ws://devnetchainx.alaya.network"
       ],
       "bridge": "atp1emxqzwmz0nv5pxk3h9e2dp3p6djfkqwn4v05zk",
       "erc20Handler": "atp15nqwyjpffntmgg05aq6u7frdvy60qnm82007q5",
-      "http": "true",
+      "http": "false",
       "prefix": "atp",
       "networkId": "201030",
       "relayers": [
@@ -24,11 +24,12 @@
       "name": "platon",
       "chainId": "4",
       "endpoint": [
-        "http://47.241.98.219:6789"
+        "ws://devnetchainx.platon.network",
+        "ws://47.241.98.219:6790"
       ],
       "bridge": "lat13kpqglnd5xl699smjulk64v048ku7d50p3yntw",
       "erc20Handler": "lat18svtj54uzxpxunu0q63fsenyy66skz2eaw4lz3",
-      "http": "true",
+      "http": "false",
       "prefix": "lat",
       "networkId": "210309",
       "relayers": [
@@ -45,7 +46,7 @@
       "name":       "kusama_ksm",
       "chainId":    "1",
       "endpoint":   [
-        "wss://kusama.elara.patract.io"
+        "wss://supercube.pro"
       ],
       "multiSigAddress": "FYzLbRnPh7ZRkgDf23oziUzFfpokQzwRqpM9Xc6gMt2i21o",
       "totalRelayer": "5",
@@ -63,7 +64,7 @@
       "name":       "polkadot_dot",
       "chainId":    "3",
       "endpoint":   [
-        "wss://polkadot.elara.patract.io"
+        "wss://dot.supercube.pro"
       ],
       "multiSigAddress": "FYzLbRnPh7ZRkgDf23oziUzFfpokQzwRqpM9Xc6gMt2i21o",
       "totalRelayer": "5",
