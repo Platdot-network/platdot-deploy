@@ -3,12 +3,13 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	log "github.com/ChainSafe/log15"
+	"github.com/rjman-ljm/go-substrate-crypto/ss58"
 	"math/big"
 	"os"
 	"path/filepath"
+	"sort"
 	"strconv"
-
-	log "github.com/ChainSafe/log15"
 )
 
 type RawConfig struct {
@@ -245,14 +246,43 @@ func CreateRelayerConfigs(cfg *Config) ([]RootConfig, error) {
 	return configs, nil
 }
 
+type Order struct {
+	relayer string
+	id 		int
+}
+
+func NewOrder(item string, id int) Order {
+	return Order{
+		relayer: item,
+		id:      id,
+	}
+}
+
 func constructOtherRelayer(relayer string, relayers []string) []string {
-	var otherRelayer []string
+	var ss58Relayers []string
 	for _, other := range relayers {
 		if relayer == other {
 			continue
 		} else {
-			otherRelayer = append(otherRelayer, other)
+			//otherRelayers = append(otherRelayers, other)
+			/// Make orders
+			pubBytes, _ := ss58.DecodeToPub(other)
+			ss58relayer, _ := ss58.Encode(pubBytes, ss58.SubstratePrefix)
+			ss58Relayers = append(ss58Relayers, ss58relayer)
 		}
 	}
-	return otherRelayer
+
+	sort.Strings(ss58Relayers)
+
+	var otherRelayers []string
+	for _, other := range ss58Relayers {
+		otherPub, _ := ss58.DecodeToPub(other)
+		for _, relayer := range relayers {
+			relayerPub, _ := ss58.DecodeToPub(relayer)
+			if string(relayerPub) == string(otherPub) {
+				otherRelayers = append(otherRelayers, relayer)
+			}
+		}
+	}
+	return otherRelayers
 }
